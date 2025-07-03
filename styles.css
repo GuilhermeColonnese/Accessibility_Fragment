@@ -1,0 +1,85 @@
+:root {
+    --base-font-size: 100%;
+  }
+  
+  html {
+    font-size: var(--base-font-size);
+  }
+  
+  #accessibility-toolbar {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2147483647;
+    font-family: sans-serif;
+  }
+  
+  #accessibility-toggle {
+    font-size: 20px;
+    padding: 12px 14px;
+    border-radius: 50%;
+    border: none;
+    background-color: #0066cc;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  #accessibility-toggle:hover {
+    background-color: #004d99;
+  }
+  
+  #accessibility-panel {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  #accessibility-panel.hidden {
+    display: none;
+  }
+  
+  #accessibility-panel button {
+    padding: 6px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #eee;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  #accessibility-panel button:hover {
+    background-color: #ddd;
+  }
+  
+  body.high-contrast {
+    background-color: #000 !important;
+    color: #ffff00 !important;
+  }
+  
+  body.high-contrast * {
+    background-color: #000 !important;
+    color: #ffff00 !important;
+    border-color: #ffff00 !important;
+  }
+  
+  body.text-left * {
+    text-align: left !important;
+  }
+  body.text-center * {
+    text-align: center !important;
+  }
+  body.text-right * {
+    text-align: right !important;
+  }
+  body.text-justify * {
+    text-align: justify !important;
+  }
+  
